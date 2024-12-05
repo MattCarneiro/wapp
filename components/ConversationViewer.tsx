@@ -1,5 +1,5 @@
-import MessageList from './MessageList'
-import Header from './Header'
+import MessageList from '@/components/MessageList'
+import Header from '@/components/Header'
 
 export default function ConversationViewer({ name, phoneNumber, messages }: { name: string; phoneNumber: string; messages: any[] }) {
   return (
