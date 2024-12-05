@@ -27,4 +27,3 @@ export default async function ConversationPage({ params }: { params: { name: str
     return <InstanceNotFound name={params.name} />
   }
 }
-
