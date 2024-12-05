@@ -1,4 +1,4 @@
-import pool from './db'
+import pool from '@/lib/db'
 
 export async function fetchMessages(name: string, phoneNumber: string) {
   const instanceQuery = await pool.query('SELECT id FROM Instance WHERE name = $1', [name])
@@ -31,4 +31,3 @@ export async function fetchMessages(name: string, phoneNumber: string) {
     })
   }))
 }
-
